@@ -1,3 +1,3 @@
-# typescript-nodejs-project
+# username-generator
 
-this is a template project. if you don't remove this message you are big chungus
+Generate usernames
