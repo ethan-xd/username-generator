@@ -1,5 +1,5 @@
 {
-  "name": "username-generator",
+  "name": "@ethan-xd/username-generator",
   "main": "dist/main.js",
   "version": "1.0.0",
   "files": [
