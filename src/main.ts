@@ -1,4 +1,4 @@
-class Username {
+export class Username {
 	private minLength: number;
 	private maxLength: number;
 	private maxAlphabetStringLength: number;
@@ -109,23 +109,23 @@ class Username {
 		}
 	}
 
-	getName() {
+	getName(): string {
 		return Username.getRand(this.names);
 	}
 
-	getAnimal() {
+	getAnimal(): string {
 		return Username.getRand(this.animals);
 	}
 
-	getColor() {
+	getColor(): string {
 		return Username.getRand(this.colors);
 	}
 
-	getAdjective() {
+	getAdjective(): string {
 		return Username.getRand(this.adjectives);
 	}
 
-	getAlphabetString() {
+	getAlphabetString(): string {
 		const num = Math.floor(Math.random() * this.maxAlphabetStringLength) + 1;
 		let ret = '';
 		for (let i = 0; i < num; i++) {
@@ -134,7 +134,7 @@ class Username {
 		return ret;
 	}
 
-	makeUsername() {
+	makeUsername(): string {
 		const parts = Math.floor(Math.random() * this.maxPartsOfName + 1);
 
 		let ret = '';
@@ -150,7 +150,3 @@ class Username {
 		return ret;
 	}
 }
-
-module.exports = {
-	Username,
-};
